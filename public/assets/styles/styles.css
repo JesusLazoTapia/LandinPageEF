@@ -4,41 +4,36 @@
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
 
-/*General Common Styles*/
+/*General Common Styles - elementos bases*/
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
-html{
-
+html {
     font: normal 16px sans-serif;
     color: #555;
     scroll-behavior: smooth !important;
-
 }
 
-ul,nav{
-
+ul,nav {
     list-style: none;
 }
 
-*{
+a {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
     opacity: 0.9;
 }
 
-a:hover{
-
+a:hover {
     opacity: 1;
 }
 
-a.btn{
+a.btn {
     color: #fff;
     border-radius: 4px;
     text-transform: uppercase;
@@ -49,30 +44,26 @@ a.btn{
 
 /*Section Common Style*/
 
-section{
-
+section {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 125px 100px;
 }
 
-@media (max-width: 1000px){
-
+@media (max-width: 1000px) {
     section {
         padding: 100px 50px;
     }
 }
 
-@media (max-width: 600px){
-
+@media (max-width: 600px) {
     section{
         padding: 80px 30px;
     }
 }
 
-section h3.title{
-
+section h3.title {
     color: #414A4F;
     text-transform: capitalize;
     font: bold 32px 'Open Sans', sans-serif;
@@ -80,8 +71,7 @@ section h3.title{
     text-align: center;
 }
 
-section p{
-
+section p {
     max-width: 800px;
     text-align: center;
     margin-bottom: 35px;
@@ -90,7 +80,6 @@ section p{
 }
 
 ul.grid {
-
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -99,8 +88,8 @@ ul.grid {
 
 
 /*Header Section*/
-header{
 
+header {
     position: absolute;
     top: 0;
     left: 0;
@@ -113,12 +102,11 @@ header{
     padding: 35px 100px 0;
 }
 
-header h2{
-
+header h2 {
     font-family: 'Quicksand', sans-serif;
 }
 
-header nav{
+header nav {
     display: flex;
 }
 
@@ -126,8 +114,7 @@ header  nav li {
     margin: 0 15px;
 }
 
-header nav li:first-child{
-
+header nav li:first-child {
     margin-left: 0;
 }
 
@@ -135,37 +122,33 @@ header nav li:last-child{
     margin-right: 0;
 }
 
-@media (max-width: 1000px){
-
-    header{
+@media (max-width: 1000px) {
+    header {
         padding: 20px 50px;
     }
 }
 
-@media (max-width: 700px){
-
+@media (max-width: 700px) {
     header{
         flex-direction: column;
     }
-    header h2{
+    header h2 {
         margin-bottom: 15px;
     }
 }
 
 
-/*Heroe Section*/
+/*Hero Section*/
 
-.hero{
-
+.hero {
     position: relative;
     justify-content: center;
     min-height: 100vh;
-    color:#fff;
+    color: #fff;
     text-align: center;
 }
 
-.here.background-imagine{
-
+.hero .background-image {
     position: absolute;
     top: 0;
     left: 0;
@@ -176,8 +159,7 @@ header nav li:last-child{
     z-index: -1;
 }
 
-.hero.background-imagine:after{
-
+.hero .background-image:after {
     content: '';
     position: absolute;
     top: 0;
@@ -188,28 +170,27 @@ header nav li:last-child{
     opacity: 0.75;
 }
 
-.hero h1{
-
+.hero h1 {
     font: normal 28px 'Open Sans', sans-serif;
     margin-bottom: 40px;
 }
 
-.hero a.btn{
+.hero a.btn {
     padding: 20px 46px;
 }
 
 @media (max-width: 800px) {
 
-    .hero{
+    .hero {
         min-height: 600px;
     }
-    .hero h1{
+    .hero h1 {
         font-size: 48px;
     }
-    .hero h3{
+    .hero h3 {
         font-size: 24px;
     }
-    .hero a.btn{
+    .hero a.btn {
         padding: 15px 40px;
     }
 }
